@@ -8,6 +8,7 @@ dependencies {
     implementation("com.google.android.material:material:1.3.0")
     implementation("androidx.appcompat:appcompat:1.2.0")
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.1.5")
 }
 
 android {
@@ -18,6 +19,9 @@ android {
         targetSdkVersion(30)
         versionCode = 1
         versionName = "1.0"
+    }
+    compileOptions {
+        isCoreLibraryDesugaringEnabled = true
     }
     buildTypes {
         getByName("release") {

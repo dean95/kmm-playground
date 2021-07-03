@@ -9,6 +9,10 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.3.0")
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.1.5")
+
+    val coroutinesVersion = "1.5.0"
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
 }
 
 android {
